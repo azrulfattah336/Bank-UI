@@ -35,6 +35,12 @@ class _HomePageState extends State<HomePage> {
       title: const Text("Bank UI", style: TextStyle(color: Colors.white)),
       backgroundColor: Colors.blue[900],
       ),
+      body: Padding(
+      padding: EdgeInsets.all(w * 0.04),
+      child: Column(
+      children: [],
+       ),
+      ),
     );
   }
 }
