@@ -94,7 +94,7 @@ class _HomePageState extends State<HomePage> {
                  ),
 
                  const SizedBox(height: 20),
-                 
+
                  Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -104,9 +104,19 @@ class _HomePageState extends State<HomePage> {
                       quickMenu(Icons.qr_code_scanner, "QRIS"),
                     ],
                   ),
-              ]
-            )
-           )
+              ],
+            ),
+           ),
+
+           const SizedBox(height: 20),
+
+           const Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                "Fitur Lainnya",
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              ),
+            ),
          ],
        ),
       ),
