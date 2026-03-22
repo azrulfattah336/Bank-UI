@@ -117,6 +117,16 @@ class _HomePageState extends State<HomePage> {
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
             ),
+            const SizedBox(height: 12),
+
+            Row(
+              children: [
+                quickMenu(Icons.credit_card, "BRIZZI"),
+                quickMenu(Icons.account_balance_wallet, "E-Wallet"),
+                quickMenu(Icons.savings, "Tabungan"),
+                quickMenu(Icons.receipt_long, "Tagihan"),
+              ],
+            ),
          ],
        ),
       ),
