@@ -28,6 +28,13 @@ class _HomePageState extends State<HomePage> {
   double saldo = 984750000;
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    double w = MediaQuery.of(context).size.width;
+    return Scaffold(
+      backgroundColor: Colors.grey[350],
+      appBar: AppBar(
+      title: const Text("Bank UI", style: TextStyle(color: Colors.white)),
+      backgroundColor: Colors.blue[900],
+      ),
+    );
   }
 }
