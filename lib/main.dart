@@ -38,7 +38,16 @@ class _HomePageState extends State<HomePage> {
       body: Padding(
       padding: EdgeInsets.all(w * 0.04),
       child: Column(
-      children: [],
+        children: [
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.all(16),
+            decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(20),
+            ),
+           )
+         ],
        ),
       ),
     );
