@@ -92,6 +92,18 @@ class _HomePageState extends State<HomePage> {
                       ],
                     ),
                  ),
+
+                 const SizedBox(height: 20),
+                 
+                 Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      quickMenu(Icons.send, "Transfer"),
+                      quickMenu(Icons.payment, "BRIVA"),
+                      quickMenu(Icons.phone_android, "Pulsa"),
+                      quickMenu(Icons.qr_code_scanner, "QRIS"),
+                    ],
+                  ),
               ]
             )
            )
