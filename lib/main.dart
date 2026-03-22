@@ -25,6 +25,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  double saldo = 984750000;
   @override
   Widget build(BuildContext context) {
     return Scaffold();
