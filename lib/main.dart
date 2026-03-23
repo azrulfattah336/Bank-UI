@@ -142,4 +142,27 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
+
+   Widget quickMenu(IconData icon, String label) {
+    return Expanded(
+      child: Column(
+        children: [
+          Container(
+            padding: const EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              color: Colors.blue[600],
+              borderRadius: BorderRadius.circular(16),
+            ),
+            child: Icon(icon, size: 28, color: Colors.white),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            label,
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Colors.black, fontSize: 12),
+          ),
+        ],
+      ),
+    );
+  }
 }
