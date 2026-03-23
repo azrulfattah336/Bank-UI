@@ -38,6 +38,7 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Padding(
         padding: EdgeInsets.all(w * 0.04),
+        child: SingleChildScrollView(
         child: Column(
           children: [
             Container(
@@ -141,6 +142,8 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
+      )
+
       bottomNavigationBar: BottomNavigationBar(
   currentIndex: selectedIndex,
   onTap: (index) {
