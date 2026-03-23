@@ -26,6 +26,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   double saldo = 984750000;
+  int selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
     double w = MediaQuery.of(context).size.width;
@@ -140,6 +141,28 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+  currentIndex: selectedIndex,
+  onTap: (index) {
+    setState(() {
+      selectedIndex = index;
+    });
+  },
+  items: const [
+    BottomNavigationBarItem(
+      icon: Icon(Icons.home),
+      label: "Home",
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.history),
+      label: "Riwayat",
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.person),
+      label: "Akun",
+    ),
+  ],
+),
     );
   }
 
