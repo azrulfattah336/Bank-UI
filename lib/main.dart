@@ -32,23 +32,23 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.grey[350],
       appBar: AppBar(
-      title: const Text("Bank UI", style: TextStyle(color: Colors.white)),
-      backgroundColor: Colors.blue[900],
+        title: const Text("Bank UI", style: TextStyle(color: Colors.white)),
+        backgroundColor: Colors.blue[900],
       ),
       body: Padding(
-      padding: EdgeInsets.all(w * 0.04),
-      child: Column(
-        children: [
-          Container(
-            width: double.infinity,
-            padding: const EdgeInsets.all(16),
-            decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(20),
-            ),
-            child: Column(
-              children: [
-                Container(
+        padding: EdgeInsets.all(w * 0.04),
+        child: Column(
+          children: [
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: Column(
+                children: [
+                  Container(
                     width: double.infinity,
                     padding: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
@@ -91,11 +91,11 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ],
                     ),
-                 ),
+                  ),
 
-                 const SizedBox(height: 20),
+                  const SizedBox(height: 20),
 
-                 Row(
+                  Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       quickMenu(Icons.send, "Transfer"),
@@ -104,13 +104,13 @@ class _HomePageState extends State<HomePage> {
                       quickMenu(Icons.qr_code_scanner, "QRIS"),
                     ],
                   ),
-              ],
+                ],
+              ),
             ),
-           ),
 
-           const SizedBox(height: 20),
+            const SizedBox(height: 20),
 
-           const Align(
+            const Align(
               alignment: Alignment.centerLeft,
               child: Text(
                 "Fitur Lainnya",
@@ -127,8 +127,18 @@ class _HomePageState extends State<HomePage> {
                 quickMenu(Icons.receipt_long, "Tagihan"),
               ],
             ),
-         ],
-       ),
+            const SizedBox(height: 12),
+
+            Row(
+              children: [
+                quickMenu(Icons.phone_android, "Pulsa"),
+                quickMenu(Icons.lightbulb, "Listrik"),
+                quickMenu(Icons.water_drop, "PDAM"),
+                quickMenu(Icons.more_horiz, "Lainnya"),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
